@@ -1,0 +1,64 @@
+@import './config.scss';
+
+.container-header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $lightGreyColor;
+    padding: 10px;
+
+    .desktop{
+        display: none;
+    }
+
+    button{
+        display: none;
+    }
+
+    .logo{
+        width: 92px;
+    }
+    .mobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span{
+            color: $primaryColor;
+            margin-right: 10px;
+        }
+
+        img{
+            width: 30px;
+        }
+    }
+
+    @media screen and (min-width: $mediaQueryDesktop) {
+        padding: 10px 20px;
+
+        .mobile{
+            display: none;
+        }
+
+        .logo{
+            width: 160px;
+        }
+
+        .desktop{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            span{
+                font-size: 20px;
+                color: $primaryColor;
+                margin-right: 20px;
+            }
+
+            img{
+                cursor: pointer;
+            }
+        }
+    }
+}
