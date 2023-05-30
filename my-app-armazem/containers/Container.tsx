@@ -1,14 +1,13 @@
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { List } from "@/components/List";
-import React, {}from "react";
 
-export const Home = () =>{
-    return(
+export const Container = () => {
+    return (
         <>
-            <Header/>
-            <List/>
-            <Footer/>
+            <Header />
+            <List />
+            <Footer />
         </>
     )
 }
