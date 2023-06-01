@@ -1,16 +1,15 @@
-import React from "react";
-import { Item } from "./Item";
 import { useRouter } from "next/router";
+import { Item } from "./Item";
 
-export const List = () =>{
+export const List = () => {
     const router = useRouter();
-    return(
+    return (
         <>
             <div className="container-list">
-                <Item/>
-                <button onClick={()=> router.push("/budget")}>
-                    <span>+</span> 
-                    Criar Orçamento
+                <Item />
+                <button onClick={() => router.push("/budget")}>
+                    <span>+</span>
+                    Criar Orçamento.
                 </button>
             </div>
         </>
