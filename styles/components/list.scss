@@ -1,6 +1,7 @@
-@import './config.scss';
+@import '../config.scss';
 
-.container-list{
+
+.container-list {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -12,14 +13,14 @@
         justify-content: flex-start;
     }
 
-    p{
+    p {
         color: $primaryColor;
         font-size: 14px;
         display: block;
         font-weight: 800;
     }
 
-    button{
+    button {
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -33,21 +34,21 @@
         padding: 0px 15px;
         margin-bottom: 15px;
 
-        img{
+        img {
             margin-right: 15px;
         }
     }
 
     @media screen and (min-width: $mediaQueryDesktop) {
-        img{
+        img {
             width: 500px;
         }
-    
-        p{
+
+        p {
             font-size: 20px;
         }
 
-        button{
+        button {
             display: block;
             width: 175px;
             height: 40px;
@@ -58,7 +59,7 @@
             font-size: 16px;
             align-items: center;
 
-            span{
+            span {
                 font-size: 20px;
                 letter-spacing: 2px;
             }

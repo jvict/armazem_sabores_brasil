@@ -1,6 +1,7 @@
-@import './config.scss';
+@import '../config.scss';
 
-.container-header{
+
+.container-header {
     display: flex;
     width: 100%;
     align-items: center;
@@ -8,28 +9,29 @@
     border-bottom: 1px solid $lightGreyColor;
     padding: 10px;
 
-    .desktop{
+    .desktop {
         display: none;
     }
 
-    button{
+    button {
         display: none;
     }
 
-    .logo{
+    .logo {
         width: 92px;
     }
-    .mobile{
+
+    .mobile {
         display: flex;
         align-items: center;
         justify-content: center;
 
-        span{
+        span {
             color: $primaryColor;
             margin-right: 10px;
         }
 
-        img{
+        img {
             width: 30px;
         }
     }
@@ -37,26 +39,26 @@
     @media screen and (min-width: $mediaQueryDesktop) {
         padding: 10px 20px;
 
-        .mobile{
+        .mobile {
             display: none;
         }
 
-        .logo{
+        .logo {
             width: 160px;
         }
 
-        .desktop{
+        .desktop {
             display: flex;
             align-items: center;
             justify-content: center;
 
-            span{
+            span {
                 font-size: 20px;
                 color: $primaryColor;
                 margin-right: 20px;
             }
 
-            img{
+            img {
                 cursor: pointer;
             }
         }

@@ -1,27 +1,28 @@
 @import '~bootstrap/scss/bootstrap';
-@import './config.scss';
+@import '../config.scss';
+
 
 @font-face {
     font-family: 'Biennale Regular';
-    font-weight: normal ;
-    font-style: normal ;
-    src: url('../public/fonts/BiennaleRegular.otf') format('opentype')
+    font-weight: normal;
+    font-style: normal;
+    src: url('../../public/fonts/BiennaleRegular.otf') format('opentype')
 }
 
-html{
+html {
     height: 100%;
 }
 
-body{
+body {
     height: 100%;
     font-family: 'Biennale Regular';
 }
 
-#__next{
+#__next {
     height: 100%;
     display: flex;
     flex-direction: column;
-    flex:1 1 0%;
+    flex: 1 1 0%;
     align-items: center;
     justify-content: center;
     -webkit-box-pack: center;
@@ -29,7 +30,8 @@ body{
     padding: 0;
 }
 
-input, select {
+input,
+select {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -42,41 +44,43 @@ input, select {
     border-right-width: 0px;
     border-bottom: 1px solid $mediumGreyColor;
 
-    &:focus{
+    &:focus {
         border-bottom-color: $primaryColor;
     }
 
     outline: none;
 
-    &::placeholder{
+    &::placeholder {
         color: $mediumGreyColor;
         opacity: 1;
     }
 
-    &:-ms-input-placeholder{
+    &:-ms-input-placeholder {
         color: $mediumGreyColor;
     }
 
-    &::-ms-input-placeholder{
+    &::-ms-input-placeholder {
         color: $mediumGreyColor;
     }
 }
 
 @media screen and (min-width: $mediaQueryDesktop) {
-    input, select {
+
+    input,
+    select {
         border-radius: 8px;
         border-width: 1px;
         padding: 5px;
         outline: none;
     }
 
-    select{
+    select {
         min-width: 125px;
     }
 }
 
-@import './header.scss';
-@import './footer.scss';
-@import './list.scss';
-@import './item.scss';
-@import './form.scss';
+@import '../components/header.scss';
+@import '../components/footer.scss';
+@import '../components/list.scss';
+@import '../components/item.scss';
+@import '../components/form.scss';
