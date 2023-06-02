@@ -1,34 +1,85 @@
 @import '../config.scss';
 
-
 .container-form {
-    display: flex;
+    border-top: none;
+    margin-top: 0px;
+    padding-top: 0px;
 
-    align-items: center;
-    justify-content: center;
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
 
-
-
-    .form-header {
-
-
-        p {}
-
-        input {}
-    }
-
-    .form-footer {}
-
-    @media screen and (min-width: $mediaQueryDesktop) {
-        .form-header {
-            display: flex;
-            flex-direction: column;
-
-            p {}
-
-            input {}
+        button {
+            width: 40%;
+            height: 50px;
+            background-color: $primaryColor;
+            background-color: $primaryColor;
+            border: none;
+            outline: none;
+            color: white;
+            border-radius: 12px;
+            font-size: 15px;
+            margin-right: 15px;
+            cursor: pointer;
         }
 
-        .form-footer {}
+        span {
+            color: $mediumGreyColor;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+    .form-body { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        p{
+            color: $primaryColor;
+            font-size: 20px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input{
+            border-width: 0.5px;
+            border-color: $mediumGreyColor;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 90%;
+        }
+    }
+
+
+    
+
+    @media screen and (min-width: $mediaQueryDesktop) {
+        .button {
+            button {
+                width: 15%;
+                height: 50px;   
+            }
+        }
+
+        .form-body { 
+            p{
+                font-size: 25px;
+                font-weight: bold;
+            }
+    
+            input{
+                border-width: 0.5px;
+                border-color: $mediumGreyColor;
+                border-radius: 8px;
+                padding: 10px;
+                margin-bottom: 10px;
+                width: 60%;
+            }
+        }
     }
 }
